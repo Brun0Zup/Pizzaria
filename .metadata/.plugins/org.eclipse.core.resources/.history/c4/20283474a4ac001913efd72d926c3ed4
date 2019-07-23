@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>______________________________</p>
+    
+        <div class="pizzas">
+                <h2 th:each text="Nome + ${pizza.Nome}"></h2></a>
+                <p th: each text="Sabor ${pizzas.sabor}"></p>
+                <p th: each text="Tipo-+massa + ${pizzas.massa}"></p>
+                <p th: each text="Borda + ${pizzas.borda}"></p>
+                <h3 th:each text="Preço + ${pizzas.valor}"></h3>  
+                <p>______________________________</p>            
+
+        </div>
+</body>
+</html>

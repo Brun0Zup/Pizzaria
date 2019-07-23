@@ -1,0 +1,5 @@
+package com.br.pizzaria.repositories;
+
+public interface PizzariaRepository {
+
+}

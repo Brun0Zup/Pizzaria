@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   
+</head>
+<body>
+	<div class="menu">
+        <nav>
+            <ul class="lista">
+                <li> <a href="/">Pagina inicial</a> </li>
+                <li><a href=" "> | </a></li>
+                <li> <a href="/newpizza">Criar Pizza</a> </li>
+                
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="cardapio">
+    <h1>My Cardapio</h1>
+    <p>_____________________________</p>
+    	
+        <div class="pizza" th:each="pizza : ${pizzas}">
+               <a href="" th:attr="href=${pizza.nome}" ><h2 th:text=" ${pizza.nome}"></h2></a>
+                <p th:text="Sabor +  ${pizza.Sabor}"></p>
+                <p th:text="Tipo+massa +  ${pizza.massa}"></p>
+                <p th:text="Borda +  ${pizza.borda}"></p>
+                <h3 th:text="Preço +  ${pizza.valor}"></h3>  
+                <p>______________________________</p>            
+
+        </div>
+    </div>
+    
+</body>
+</html>
+    
