@@ -26,17 +26,6 @@ public class PizzariaService {
 		return null;
 	}
 	
-	public long qtdPizzas() {
-		return  pizzariaRepository.count();
-	}
 	
 	
-	public void atualizarPizza(int id, PizzariaModel pizzariaModel) {
-		pizzariaModel.setId(id);
-		pizzariaRepository.save(pizzariaModel);
-	}
-	
-	public void apagarPizza(int id) {
-		pizzariaRepository.deleteById(id);
-	}
 }

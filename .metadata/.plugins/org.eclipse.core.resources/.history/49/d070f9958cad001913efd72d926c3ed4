@@ -16,13 +16,13 @@ public class PizzariaModel implements Serializable{
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
-	//@NotBlank(message = "O campo nome não pode estar em vazio")
+	@NotBlank(message = "O campo nome não pode estar em vazio")
 	private String nome;
-	//@NotBlank(message = "O campo sabor não pode estar em vazio")
+	@NotBlank(message = "O campo sabor não pode estar em vazio")
 	private String sabor;
-	//@NotBlank(message = "O campo massa não pode estar em vazio")
+	@NotBlank(message = "O campo massa não pode estar em vazio")
 	private String massa;
-	//@NotBlank(message = "O campo borda não pode estar em vazio")
+	@NotBlank(message = "O campo borda não pode estar em vazio")
 	private String borda;
 
 	private double valor;

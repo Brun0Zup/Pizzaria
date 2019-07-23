@@ -19,24 +19,5 @@ public class PizzariaService {
 	public Iterable<PizzariaModel> exibirPizzas(){
 		return pizzariaRepository.findAll();
 	}
-	public PizzariaModel pegarPizzaPeloId(int id) {
-		if(pizzariaRepository.existsById(id)) {
-			return pizzariaRepository.findById(id).get();
-		}
-		return null;
-	}
-	
-	public long qtdPizzas() {
-		return  pizzariaRepository.count();
-	}
-	
-	
-	public void atualizarPizza(int id, PizzariaModel pizzariaModel) {
-		pizzariaModel.setId(id);
-		pizzariaRepository.save(pizzariaModel);
-	}
-	
-	public void apagarPizza(int id) {
-		pizzariaRepository.deleteById(id);
-	}
+
 }
